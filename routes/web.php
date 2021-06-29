@@ -21,3 +21,4 @@ use App\Http\Livewire\Posts;
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/', Posts::class
 )->name('dashboard');
+

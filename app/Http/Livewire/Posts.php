@@ -47,6 +47,8 @@ class Posts extends Component
             $this->judul_buku='';
             $this->penulis='';
             $this->penerbit='';
+
+            return redirect()->to('/'); 
     }
     public function edit($id){
         $post = Post::findOrfail($id);

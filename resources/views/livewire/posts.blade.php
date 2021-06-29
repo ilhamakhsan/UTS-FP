@@ -14,6 +14,14 @@
                     @if($isOpen)
                         @include('livewire.create')
                        @endif
+                <button onclick="tampilpdf()" type="button" class=" mb-2 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded py-1 px-2 ">
+                       Print 	
+                </button>
+            <script>
+            function tampilpdf(){
+                window.print();
+            }
+            </script>
                 <div class="bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                     <table class="table-fixed w-full">
                         <thead class="border-2 ">
